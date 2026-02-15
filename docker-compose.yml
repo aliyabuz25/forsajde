@@ -1,6 +1,5 @@
 services:
   forsaj:
-    image: forsaj-backend:latest
     build:
       context: .
       dockerfile: Dockerfile
