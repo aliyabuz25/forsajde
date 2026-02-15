@@ -52,7 +52,7 @@ docker images | grep forsaj
 
 ### Stack Deploy
 - **Deploy the stack** butonuna tıkla
-- Container'ların başladığını kontrol et
+- Container'ın başladığını kontrol et
 
 ## 4. Cloudflare Tunnel Yapılandırması
 
@@ -83,8 +83,7 @@ docker ps | grep forsaj
 
 Beklenen çıktı:
 ```
-forsaj-backend-1     forsaj-backend:latest     Up
-forsaj-frontend-1    forsaj-backend:latest     Up
+forsaj_forsaj-1     forsaj-backend:latest     Up
 ```
 
 ### HTTP Test
@@ -109,8 +108,7 @@ curl -H "Host: forsaj.az" http://127.0.0.1:8080/uploads/
 
 ### Container Logları
 ```bash
-docker logs forsaj-backend-1
-docker logs forsaj-frontend-1
+docker logs forsaj_forsaj-1
 ```
 
 ### Traefik Logları
@@ -126,8 +124,7 @@ nslookup forsaj.octotech.az
 
 ### Container Yeniden Başlatma
 ```bash
-docker restart forsaj-backend-1
-docker restart forsaj-frontend-1
+docker restart forsaj_forsaj-1
 ```
 
 ## 7. Güncelleme Prosedürü
@@ -136,14 +133,14 @@ docker restart forsaj-frontend-1
 ```bash
 # Yeni kodu sunucuya aktar
 cd /datastore/forsaj/app
-git pull  # veya yeni ZIP yükle
+git pull origin main
 
 # Image'i yeniden build et
 docker build -t forsaj-backend:latest -f /datastore/forsaj/app/Dockerfile /datastore/forsaj/app
 
 # Portainer'dan stack'i yeniden deploy et
-# veya
-docker-compose -f /datastore/forsaj/app/docker-compose.yml up -d --force-recreate
+# VEYA basitçe:
+docker service update --force forsaj_forsaj
 ```
 
 ## 8. Önemli Notlar
