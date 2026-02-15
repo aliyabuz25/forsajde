@@ -1,6 +1,7 @@
 services:
   forsaj:
     image: forsaj-backend:latest
+    pull_policy: never
     restart: unless-stopped
     environment:
       PORT: "3000"
