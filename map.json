@@ -1,0 +1,375 @@
+{
+  "site": {
+    "name": "AZERBAIJAN OFFROAD MOTORSPORT HUB",
+    "established": 2018,
+    "description": "Azərbaycanın offroad və motorsport platforması",
+    "logo": "https://forsaj.az/logo.png"
+  },
+  "settings": {
+    "marqueeEnabled": true,
+    "marqueeText": "SUMQAYIT CHALLENGE ÜÇÜN QEYDİYYAT DAVAM EDİR!"
+  },
+  "navigation": {
+    "home": "ANA SƏHİFƏ",
+    "about": "HAQQIMIZDA",
+    "news": "XƏBƏRLƏR",
+    "events": "YARIŞLAR",
+    "drivers": "SÜRÜCÜLƏR",
+    "gallery": "QALEREYA",
+    "rules": "QAYDALAR",
+    "contact": "ƏLAQƏ"
+  },
+  "hero": {
+    "badge": "AZERBAIJAN OFFROAD MOTORSPORT HUB",
+    "title_line1": "SƏRHƏDSİZs",
+    "title_highlight": "OFFROAD",
+    "title_line2": "HƏYƏCANI",
+    "subtitle": "Azərbaycanın ən çətin yollarında peşəkar yarışlar və adrenalin dolu anlar.",
+    "bg_image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2070&auto=format&fit=crop",
+    "btn_races": "YARIŞ TƏQVİMİ",
+    "btn_about": "HAQQIMIZDA"
+  },
+  "about": {
+    "title": "HAQQIMIZDA",
+    "subtitle": "BİZİM HEKAYƏMİZ // MİSSİYAMIZ",
+    "est_title": "EST. 2018 // MOTORSPORT MƏRKƏZİ",
+    "hero_text": "FORSAJ CLUB AZƏRBAYCANIN OFFROAD MƏDƏNİYYƏTİNİ TƏMSİL EDİR",
+    "description": "2018-ci ildən bəri biz Azərbaycanın ən çətin yollarında unudulmaz yarışlar təşkil edirik.",
+    "image": "https://images.unsplash.com/photo-1541447271487-09612b3f49f7?q=80&w=1974&auto=format&fit=crop",
+    "stats": [
+      {
+        "label": "PİLOTLAR",
+        "value": "140+"
+      },
+      {
+        "label": "YARIŞLAR",
+        "value": "50+"
+      },
+      {
+        "label": "GƏNCLƏR",
+        "value": "20+"
+      }
+    ]
+  },
+  "mission_vision": {
+    "mission_title": "BİZİM MİSSİYAMIZ",
+    "mission_desc": "Azərbaycanın hər bir guşəsində offroad idmanını təbliğ etmək və peşəkar pilotlar yetişdirmək.",
+    "target_text": "HƏDƏFİMİZ: DAKAR RALLİ 2026",
+    "vision_title": "BİZİM VİZYONUMUZ",
+    "vision_desc": "Azərbaycanın offroad potensialını dünyaya tanıtmaq və beynəlxalq səviyyəli yarış mərkəzi olmaq.",
+    "vision_goal": "QAFQAZIN MOTORSPORT HUBI"
+  },
+  "values": [
+    {
+      "title": "TƏHLÜKƏSİZLİK",
+      "description": "BİZİM ÜÇÜN HƏR ŞEYDƏN ÖNCƏ GƏLƏN İŞTİRAKÇILARIMIZIN TƏHLÜKƏSİZLİYİDİR."
+    },
+    {
+      "title": "CƏMİYYƏT",
+      "description": "OFFROAD SEVƏNLƏRİ BİR ARAYA GƏTİRƏN ƏN BÖYÜK MOTORSPORT AİLƏSİ."
+    },
+    {
+      "title": "EKOLOGİYA",
+      "description": "TƏBİƏTİ QORUYUR VƏ EKOLOJİ MƏSULİYYƏTİMİZİ HƏMİŞƏ DİQQƏTDƏ SAXLAYIRIQ."
+    },
+    {
+      "title": "ADRENALİN",
+      "description": "HƏR YARIŞDA YÜKSƏK SÜRƏT VƏ UNUDULMAZ ADRENALİN DOLU ANLAR VƏD EDİRİK."
+    }
+  ],
+  "rules": [
+    {
+      "id": "pilot",
+      "tab_name": "PİLOT PROTOKOLU",
+      "items": [
+        {
+          "title": "PİLOTUN ÖHDƏLİKLƏRİ",
+          "text": "Hər bir pilot yarış zamanı nizam-intizam qaydalarına və hakimlərin qərarlarına tabe olmalıdır."
+        },
+        {
+          "title": "KƏNARLAŞDIRMA",
+          "text": "Təhlükəsizlik kəmərini taxmayan və ya qeyri-etik davranış sərgiləyən pilotlar yarışdan kənarlaşdırılır."
+        },
+        {
+          "title": "TEXNİKİ TƏLƏBLƏR",
+          "text": "Avtomobilin bütün asqı və mühərrik sistemləri texniki baxışdan keçməlidir."
+        }
+      ]
+    },
+    {
+      "id": "technical",
+      "tab_name": "TEXNİKİ NORMATİVLƏR",
+      "items": [
+        {
+          "title": "TƏKƏR ÖLÇÜLƏRİ",
+          "text": "Kateqoriyalara görə maksimum təkər ölçüsü 37 düym olaraq təyin edilmişdir."
+        },
+        {
+          "title": "MÜHƏRRİK GÜCÜ",
+          "text": "Stock kateqoriyasında zavod istehsalı olan mühərrik gücü saxlanılmalıdır."
+        },
+        {
+          "title": "ASQI SİSTEMİ",
+          "text": "Unlimited kateqoriyasında istənilən tip asqı sistemindən istifadəyə icazə verilir."
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "tab_name": "TƏHLÜKƏSİZLİK QAYDALARI",
+      "items": [
+        {
+          "title": "TƏHLÜKƏSİZLİK KARKASI",
+          "text": "Extreme kateqoriyasında bütün maşınlar xarici və ya daxili karkasla təchiz olunmalıdır."
+        },
+        {
+          "title": "YANĞINSÖNDÜRƏN",
+          "text": "Hər bir avtomobildə əlçatan yerdə ən azı 2 kq-lıq yanğınsöndürən olmalıdır."
+        },
+        {
+          "title": "KƏMƏR VƏ DƏBİLQƏ",
+          "text": "4 nöqtəli kəmər ve sertifikatlı dəbiqlə istifadəsi bütün mərhələlərdə məcburidir."
+        }
+      ]
+    },
+    {
+      "id": "eco",
+      "tab_name": "EKOLOJİ MƏSULİYYƏT",
+      "items": [
+        {
+          "title": "TULLANTILARIN İDARƏSİ",
+          "text": "Yarış ərazisində və düşərgələrdə tullantı atmaq qəti qadağandır."
+        },
+        {
+          "title": "MAYELƏRİN SIZMASI",
+          "text": "Yağ və ya soyuducu maye sızması olan avtomobillər starta buraxılmır."
+        },
+        {
+          "title": "MARŞRUTUN QORUNMASI",
+          "text": "Təyin olunmuş marşrutdan kənara çıxaraq təbiətə zərər vermək cərimələrə səbəb olur."
+        }
+      ]
+    }
+  ],
+  "news_subtitle": "Motorsport və Offroad dünyasından yeniliklər",
+  "news": [
+    {
+      "id": "1",
+      "title": "Azərbaycan Offroad Federasiyası Yeni Reqlamenti Elan Etdi",
+      "description": "2024-cü il mövsümü üçün bütün yarışlarda tətbiq olunacaq yeni texniki reqlament artıq qüvvədədir.",
+      "date": "01.02.2024",
+      "image": "https://images.unsplash.com/photo-1541447271487-09612b3f49f7?q=80&w=800",
+      "category": "FEDERASİYA",
+      "isMain": true
+    },
+    {
+      "id": "2",
+      "title": "Forsaj Club Beynəlxalq Yarışda Təmsil Olunacaq",
+      "description": "Klubumuzun pilotları aprel ayında Türkiyədə keçiriləcək TransAnatolia ralisində iştirak etmək üçün dəvət alıblar.",
+      "date": "28.01.2024",
+      "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800",
+      "category": "KLUB",
+      "isMain": false
+    },
+    {
+      "id": "3",
+      "title": "Yeni Offroad Akademiyası Açıldı",
+      "description": "Gənc pilotlar üçün nəzərdə tutulmuş Forsaj Offroad Academy artıq qeydiyyata başlayıb.",
+      "date": "15.01.2024",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800",
+      "category": "AKADEMİYA",
+      "isMain": false
+    },
+    {
+      "id": "4",
+      "title": "Qış Kuboku 2024 Final Mərhələsi",
+      "description": "Şahdağ ətəklərində keçirilən Qış Kubokunun final mərhələsi böyük maraqla qarşılandı.",
+      "date": "10.01.2024",
+      "image": "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=800",
+      "category": "YARIŞ",
+      "isMain": false
+    },
+    {
+      "id": "5",
+      "title": "Forsaj Club-dan Xeyriyyə Yürüşü",
+      "description": "Klub üzvləri bölgələrdəki ehtiyac sahibi ailələr üçün yardım kampaniyası çərçivəsində möhtəşəm yürüş etdilər.",
+      "date": "05.01.2024",
+      "image": "https://images.unsplash.com/photo-1511994711687-03fd331d7182?q=80&w=800",
+      "category": "SOSİAL",
+      "isMain": false
+    }
+  ],
+  "events_upcoming": [
+    {
+      "id": "1",
+      "title": "SPRING MUD FEST 2024",
+      "date": "25.04.2024",
+      "location": "Xızı, Azərbaycan",
+      "image": "https://images.unsplash.com/photo-1541447271487-09612b3f49f7?q=80&w=800",
+      "category": "EXTREME",
+      "description": "Bahar mövsümünün ən gözlənilən yarışı! Şiddətli palçıq və çətin maneələrlə dolu bir tras sizi gözləyir.",
+      "status": "planned"
+    },
+    {
+      "id": "2",
+      "title": "DESERT STORM 2024",
+      "date": "15.06.2024",
+      "location": "Qobustan, Azərbaycan",
+      "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800",
+      "category": "SPEED",
+      "description": "Qobustanın qumlu dərələrində sürət və dözümlülük yarışı.",
+      "status": "planned"
+    }
+  ],
+  "events_past": [
+    {
+      "id": "3",
+      "title": "WINTER CUP 2023",
+      "date": "20.12.2023",
+      "location": "Şahdağ, Azərbaycan",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800",
+      "category": "WINTER",
+      "description": "Qarlı və buzlu trasda unudulmaz yarış təcrübəsi.",
+      "status": "past"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "1",
+      "name": "RAMİL HÜSEYNOV",
+      "category": "UNLIMITED",
+      "points": 450,
+      "car": "Nissan Patrol Y61",
+      "team": "BAKU BULLS",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&fit=crop"
+    },
+    {
+      "id": "2",
+      "name": "SƏİD MƏMMƏDOV",
+      "category": "LEGEND",
+      "points": 420,
+      "car": "Toyota Land Cruiser 70",
+      "team": "GANJA GEARS",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&fit=crop"
+    },
+    {
+      "id": "3",
+      "name": "LEYLA QASIMOVA",
+      "category": "SEMI STOCK",
+      "points": 380,
+      "car": "Suzuki Jimny",
+      "team": "SİLK ROAD",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&fit=crop"
+    },
+    {
+      "id": "4",
+      "name": "TURAL ƏLİYEV",
+      "category": "UTV",
+      "points": 310,
+      "car": "Polaris RZR",
+      "team": "CASPIAN RAIDERS",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&fit=crop"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "1",
+      "title": "FORSAJ WINTER CHALLENGE 2024",
+      "date": "15.01.2024",
+      "category": "Yarış",
+      "image": "https://images.unsplash.com/photo-1541447271487-09612b3f49f7?q=80&w=600",
+      "photos": [
+        {
+          "id": "p1",
+          "title": "Start line",
+          "url": "https://images.unsplash.com/photo-1541447271487-09612b3f49f7?q=80&w=600"
+        },
+        {
+          "id": "p2",
+          "title": "Mud crossing",
+          "url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=600"
+        }
+      ],
+      "videos": [
+        {
+          "id": "v1",
+          "title": "Final Stage Highlights",
+          "videoId": "dQw4w9WgXcQ",
+          "duration": "04:20"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "OFFROAD EXPEDITION: QAFQAZ 2023",
+      "date": "20.10.2023",
+      "category": "Ekspedisiya",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600"
+    }
+  ],
+  "video_archive": [
+    {
+      "id": "v1",
+      "title": "FORSAJ WINTER CHALLENGE 2024 - HEYECAN DOLU ANLAR",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "duration": "04:20"
+    },
+    {
+      "id": "v2",
+      "title": "OFFROAD EKSPEDİSİYA: QAFQAZ DAĞLARI",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "duration": "08:15"
+    }
+  ],
+  "partners": [
+    {
+      "id": "1",
+      "name": "AZMF",
+      "url": "https://azmf.az",
+      "image": "https://placehold.co/400x200/black/white?text=AZMF"
+    },
+    {
+      "id": "2",
+      "name": "OFFROAD AZ",
+      "url": "https://offroad.az",
+      "image": "https://placehold.co/400x200/black/white?text=OFFROAD+AZ"
+    },
+    {
+      "id": "3",
+      "name": "GLOBAL 4X4",
+      "url": "https://global4x4.com",
+      "image": "https://placehold.co/400x200/black/white?text=GLOBAL+4X4"
+    },
+    {
+      "id": "4",
+      "name": "RACE TECH",
+      "url": "#",
+      "image": "https://placehold.co/400x200/black/white?text=RACE+TECH"
+    }
+  ],
+  "contact": {
+    "address": "AZADLIQ 102, BAKI",
+    "phone": "+994 50 123 45 67",
+    "email": "PROTOCOL@FORSAJ.AZ",
+    "hours": "09:00 - 18:00",
+    "social": {
+      "instagram": "https://instagram.com/forsaj_club",
+      "youtube": "https://youtube.com/@forsajclub",
+      "facebook": "https://facebook.com/forsajclub"
+    },
+    "departments": [
+      {
+        "name": "BAŞ OFİS",
+        "email": "HQ@FORSAJ.AZ"
+      },
+      {
+        "name": "MEDİA VƏ PR",
+        "email": "PR@FORSAJ.AZ"
+      },
+      {
+        "name": "TEXNİKİ DƏSTƏK",
+        "email": "TECH@FORSAJ.AZ"
+      }
+    ]
+  }
+}

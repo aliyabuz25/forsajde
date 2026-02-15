@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OctoPanel | Sitemap Redaktoru</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="editor-styles.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed dark-mode">
+    <!-- Production Loading Splash -->
+    <div id="loadingSplash" class="loading-splash">
+        <div class="splash-content text-center">
+            <div class="spinner-border text-primary mb-3" style="width: 3rem; height: 3rem;" role="status text-primary">
+                <span class="sr-only">Yüklənir...</span>
+            </div>
+            <h5 class="font-weight-bold tracking-widest text-uppercase">OctoPanel</h5>
+            <p class="text-xs opacity-50">Sistem yüklənir...</p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-dark border-bottom-0">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <span class="nav-link font-weight-bold" id="editorTitle">Əsas Bölmə</span>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-3 d-flex align-items-center">
+                    <span id="statusMessage" class="badge badge-success px-3 py-2">Sinxronlaşdırıldı</span>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary btn-sm px-4 py-2 shadow-sm rounded-pill" id="saveButton">
+                        <i class="fas fa-check-circle mr-2"></i>Yadda Saxla
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-0">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link">
+                <div class="brand-image img-circle elevation-1 bg-primary d-flex align-items-center justify-content-center"
+                    style="width: 33px; height: 33px;">
+                    <i class="fas fa-layer-group text-white" style="font-size: 14px;"></i>
+                </div>
+                <span class="brand-text font-weight-bold">OctoPanel</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Search -->
+                <div class="form-inline mt-4 position-relative px-2">
+                    <div class="input-group w-100">
+                        <input id="searchInput" class="form-control form-control-sidebar border-0" type="search"
+                            placeholder="Məzmun axtar..." aria-label="Axtar">
+                        <div id="searchResults" class="search-results-container"></div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-4">
+                    <ul class="nav nav-pills nav-sidebar flex-column text-sm" data-widget="treeview" role="menu"
+                        data-accordion="false" id="sectionNav">
+                        <!-- Dynamic sections will be injected here -->
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div id="formContainer" class="row">
+                        <!-- Form fields will render here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Main Footer -->
+        <footer class="main-footer text-xs px-4">
+            <div class="float-right d-none d-sm-inline">
+                Professional Management Suite
+            </div>
+            <strong>OctoPanel &copy; 2026.</strong> Bütün hüquqlar daxili nizamnamə ilə qorunur.
+        </footer>
+    </div>
+
+    <!-- Raw JSON Modal -->
+    <div class="modal fade" id="jsonModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content shadow-lg border-0" style="border-radius: 20px; overflow: hidden;">
+                <div class="modal-header border-bottom bg-dark p-4">
+                    <h5 class="modal-title font-weight-bold" id="jsonModalTitle">Raw JSON Redaktoru</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <textarea id="jsonRawArea" class="form-control bg-dark border-0 p-4"
+                        style="height: 550px; font-family: 'JetBrains Mono', monospace; font-size: 14px; outline: none; resize: none;"></textarea>
+                </div>
+                <div class="modal-footer p-4 bg-dark border-top">
+                    <button type="button" class="btn btn-outline-secondary px-4 rounded-pill"
+                        data-dismiss="modal">İmtina</button>
+                    <button type="button" class="btn btn-primary px-4 rounded-pill shadow" onclick="saveRawJSON()">Yadda
+                        Saxla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    <script src="editor-logic.js"></script>
+</body>
+
+</html>
