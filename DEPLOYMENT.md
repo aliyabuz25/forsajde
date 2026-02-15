@@ -129,17 +129,28 @@ docker restart forsaj_forsaj-1
 
 ## 7. Güncelleme Prosedürü
 
-### Kod Güncellemesi
+### Kod Güncellemesi (TƏMİZ YENİLƏMƏ)
+
+Əgər köhnə versiya (Admin Backend is running!) hələ də görünürsə, bu addımları sıra ilə izləyin:
+
 ```bash
-# Yeni kodu sunucuya aktar
+# 1. Kodu yeniləyin
 cd /datastore/forsaj/app
 git pull origin main
 
-# Image'i yeniden build et
-docker build -t forsaj-backend:latest -f /datastore/forsaj/app/Dockerfile /datastore/forsaj/app
+# 2. Mövcud containeri dayandırın və silin
+docker stop forsaj_forsaj-1
+docker rm forsaj_forsaj-1
 
-# Portainer'dan stack'i yeniden deploy et
-# VEYA basitçe:
+# 3. Köhnə image-i silin (VACİB)
+docker rmi forsaj-backend:latest
+
+# 4. Image-i TƏMİZ şəkildə yenidən build edin
+docker build --no-cache -t forsaj-backend:latest -f /datastore/forsaj/app/Dockerfile /datastore/forsaj/app
+
+# 5. Servisi yenidən başladın (Portainer Stack Update)
+# Stack -> Editor -> Update the stack
+# VEYA terminaldan:
 docker service update --force forsaj_forsaj
 ```
 
