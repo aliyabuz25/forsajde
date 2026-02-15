@@ -149,8 +149,12 @@ const LABEL_MAP_SERVER = {
 
 // --- Activation ---
 
-app.listen(PORT, () => {
-    log(`OctoPanel ACP http://localhost:${PORT}/editor.html ünvanında işləyir.`);
+const HOST = process.env.HOST || '0.0.0.0';
+
+app.listen(PORT, HOST, () => {
+    log(`OctoPanel ACP running on http://${HOST}:${PORT}`);
+    log(`Access editor at: http://${HOST}:${PORT}/editor.html`);
+    log(`Access admin panel at: http://${HOST}:${PORT}/acp`);
 });
 
 // Error Boundaries
