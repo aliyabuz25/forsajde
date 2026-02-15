@@ -1,0 +1,42 @@
+services:
+  forsaj-backend:
+    image: forsaj-backend:latest
+    restart: unless-stopped
+    environment:
+      PORT: "3000"
+      HOST: "0.0.0.0"
+      PUBLIC_BASE_URL: ""
+    volumes:
+      - /datastore/forsaj/uploads:/app/uploads
+      - /datastore/forsaj/app/map.json:/app/map.json
+    networks:
+      - edge
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.docker.network=edge'
+      - 'traefik.http.routers.forsaj-api.rule=(Host(`forsaj.az`) || Host(`forsaj.octotech.az`)) && (PathPrefix(`/api`) || PathPrefix(`/uploads`))'
+      - 'traefik.http.routers.forsaj-api.entrypoints=web'
+      - 'traefik.http.routers.forsaj-api.priority=100'
+      - 'traefik.http.services.forsaj-api.loadbalancer.server.port=3000'
+
+  forsaj-frontend:
+    image: forsaj-backend:latest
+    restart: unless-stopped
+    environment:
+      PORT: "3000"
+      HOST: "0.0.0.0"
+    volumes:
+      - /datastore/forsaj/uploads:/app/uploads
+      - /datastore/forsaj/app/map.json:/app/map.json
+    networks:
+      - edge
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.docker.network=edge'
+      - 'traefik.http.routers.forsaj.rule=Host(`forsaj.az`) || Host(`forsaj.octotech.az`)'
+      - 'traefik.http.routers.forsaj.entrypoints=web'
+      - 'traefik.http.services.forsaj.loadbalancer.server.port=3000'
+
+networks:
+  edge:
+    external: true
