@@ -127,32 +127,28 @@ nslookup forsaj.octotech.az
 docker restart forsaj_forsaj-1
 ```
 
-## 7. Güncelleme Prosedürü
+## 7. Güncelleme Prosedürü (Portainer Üzerinden)
 
-### Kod Güncellemesi (TƏMİZ YENİLƏMƏ)
+Artık terminal komutlarına ehtiyacınız yoxdur. Hər şeyi Portainer edəcək.
 
-Əgər köhnə versiya (Admin Backend is running!) hələ də görünürsə, bu addımları sıra ilə izləyin:
+### Git Repository Metodu (Tövsiyə Olunan)
 
-```bash
-# 1. Kodu yeniləyin
-cd /datastore/forsaj/app
-git pull origin main
+Əgər Stack-i "Git Repository" kimi qurdunuzsa:
+1. Portainer-a daxil olun
+2. **Stacks** -> **forsaj** seçin
+3. Yuxarıda **Editor** tabına keçin
+4. **Update the stack** düyməsini tapın
+5. **Re-pull image** seçimini AKTİV edin (bu çox vacibdir!)
+6. **Update** düyməsinə klikləyin
 
-# 2. Mövcud containeri dayandırın və silin
-docker stop forsaj_forsaj-1
-docker rm forsaj_forsaj-1
+Portainer avtomatik olaraq:
+- GitHub-dan ən son kodu çəkəcək
+- Yeni image build edəcək
+- Köhnə containeri silib yenisini başladacaq
 
-# 3. Köhnə image-i silin (VACİB)
-docker rmi forsaj-backend:latest
+### Web Editor Metodu (Əgər Git bağlı deyilsə)
 
-# 4. Image-i TƏMİZ şəkildə yenidən build edin
-docker build --no-cache -t forsaj-backend:latest -f /datastore/forsaj/app/Dockerfile /datastore/forsaj/app
-
-# 5. Servisi yenidən başladın (Portainer Stack Update)
-# Stack -> Editor -> Update the stack
-# VEYA terminaldan:
-docker service update --force forsaj_forsaj
-```
+Əgər Stack-i sadəcə kopyala-yapışdır (Web Editor) qurdunuzsa, hər dəfə manual olaraq terminala girib build etməlisiniz (bu tövsiyə edilmir). Git metoduna keçin.
 
 ## 8. Önemli Notlar
 
